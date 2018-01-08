@@ -1,0 +1,99 @@
+@function px2rem($px) {
+  $rem: 37.5px;
+  @return ($px/$rem) + rem;
+}
+
+@mixin bg($url) {
+  background: url($url) no-repeat center / 100% 100%;
+  position: absolute;
+}
+
+@mixin bgInHorizontalCenter($url) {
+  background: url($url) no-repeat center / 100% 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin centerHorizontal() {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin centerVertical() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin left($left) {
+  position: absolute;
+  left: px2rem($left);
+}
+
+@mixin right($right) {
+  position: absolute;
+  right: px2rem($right);
+}
+
+@mixin top($top) {
+  position: absolute;
+  top: px2rem($top);
+}
+
+@mixin bottom($bottom) {
+  position: absolute;
+  bottom: px2rem($bottom);
+}
+
+@mixin center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin size($width,$height) {
+  width: px2rem($width);
+  height: px2rem($height);
+}
+
+///
+
+@mixin border-1px($color) {
+  position: relative;
+  &:after {
+    content: ' ';
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid $color;
+  }
+}
+
+@mixin border-top-1px($color) {
+  position: relative;
+  &:before {
+    content: ' ';
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top: 1px solid $color;
+  }
+}
+
+@mixin border-none() {
+  &:after {
+    display: none !important;
+  }
+}
+
+
+
+
+

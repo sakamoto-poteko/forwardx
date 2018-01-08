@@ -1,0 +1,206 @@
+@import "base";
+@import "common";
+@import "component";
+
+/*.hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  !*.hero-boxed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+  }*!
+  .bg {
+    width: 100%;
+    height: 100%;
+    background: url("../img/about/bg6.jpg") no-repeat center bottom;
+    background-size: cover;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  !*h1 {
+    margin-top: 200px;
+    line-height: 60px;
+    font-size: 120px;
+    font-weight: 900;
+    text-align: center;
+    //color: #fff;
+    //text-shadow: 1px 0px 0px #333, -1px 0px 0px #333, 0px 1px 0px #333, 0px -1px 0px #333;
+    -webkit-text-stroke: 1px #ccc;
+    text-stroke: 1px #ccc;
+    color: rgba(255, 255, 255, .8);
+  }*!
+}*/
+.hero {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .bg {
+    width: 100%;
+    height: 100%;
+    background: url("../img/about/bg6.jpg") no-repeat center top;
+    background-size: cover;
+    overflow: hidden;
+  }
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 640px;
+  margin: 0 auto;
+  .slogan {
+    position: relative;
+    margin-top: 100px;
+    @media screen and (max-width: 768px) {
+      margin-top: 50px;
+    }
+    p {
+      font-size: 30px;
+      color: #333;
+      text-align: left;
+      font-weight: 200;
+      width: 1000px;
+      line-height: 1.5;
+      margin: 0 auto;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        font-size: 20px;
+      }
+    }
+  }
+  .desc {
+    width: 1000px;
+    margin: 100px auto;
+    font-size: 0;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-top: 50px;
+    }
+    .desc-item {
+      display: inline-block;
+      vertical-align: top;
+      width: 41.6666666667%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+      }
+      h2 {
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 1.1em;
+        margin: 1em 0;
+        padding: 0 0 0 20px;
+        border-left: 2px solid #000;
+        @media screen and (max-width: 768px) {
+          padding: 0;
+          border-left: none;
+        }
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: .5em;
+        line-height: 1.625;
+      }
+    }
+    .mission {
+      margin-left: 8.3333333333%;
+      @media screen and (max-width: 768px) {
+        margin-left: 0;
+      }
+    }
+  }
+  .founders {
+    h1 {
+      width: 1000px;
+      margin: 100px auto 0;
+      text-align: left;
+      font-weight: 600;
+      padding: 0;
+      font-size: 36px;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    ul {
+      margin: 50px auto 0;
+      width: 1000px;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      li {
+        display: inline-block;
+        width: 20%;
+        vertical-align: top;
+        margin-right: 5%;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          margin-right: 0;
+          padding: 20px;
+          box-sizing: border-box;
+        }
+        h2 {
+          color: #56CCF3;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        p {
+          text-align: justify;
+          font-size: 16px;
+          font-weight: 400;
+          margin-bottom: .5em;
+          line-height: 1.625;
+          color: #333;
+        }
+      }
+    }
+  }
+
+  .partner {
+    width: 1000px;
+    margin: 100px auto 100px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .partner-item {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+      }
+      h1 {
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+      ul {
+        li {
+          font-size: 16px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,469 @@
+@import "base";
+@import "common";
+@import "~aos/dist/aos.css";
+
+.nav {
+  background: rgba(0, 0, 0, .5);
+  @media screen and (max-width: 768px) {
+    background: #000 !important;
+  }
+  .nav-link {
+    color: #ddd !important;
+  }
+  .bread-line {
+    background: #ddd !important;
+  }
+  .nav-list {
+    @media screen and (max-width: 768px) {
+      background: #000 !important;
+    }
+  }
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  min-width: 1200px;
+  min-height: 700px;
+  @media screen and (max-width: 768px) {
+    min-width: auto;
+    min-height: auto;
+  }
+  .slide {
+    font-size: 0;
+  }
+  .slide-item1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+    @media screen and (max-width: 768px) {
+      min-height: 100%;
+      height: auto;
+    }
+    .slide-boxed {
+      position: absolute;
+      top: 90px;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      @media screen and (max-width: 768px) {
+        position: static;
+        padding-top: 70px;
+        box-sizing: border-box;
+      }
+      figure {
+        float: left;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          height: auto;
+          float: none;
+        }
+        img {
+          height: 100%;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+      .epic {
+        position: relative;
+        float: right;
+        width: 50%;
+        height: 100%;
+        color: #fff;
+        @media screen and (max-width: 768px) {
+          float: none;
+          width: 100%;
+          height: auto;
+          margin-top: 50px;
+          padding-bottom: 50px;
+        }
+        .content {
+          position: absolute;
+          height: 250px;
+          top: 50%;
+          margin-top: -125px;
+          @media screen and (max-width: 768px) {
+            position: static;
+            height: 100%;
+            margin-top: 0;
+            text-align: center;
+          }
+          h1 {
+            font-size: 80px;
+            font-weight: 900;
+            line-height: 1.4;
+            margin-bottom: .5em;
+            @media screen and (max-width: 768px) {
+              font-size: 50px;
+            }
+          }
+          h2 {
+            font-size: 40px;
+            font-weight: 900;
+            line-height: 1.4;
+            margin-bottom: .5em;
+            @media screen and (max-width: 768px) {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .slide-item2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    @media screen and (max-width: 768px) {
+      background: none;
+      height: auto;
+      min-height: auto;
+      box-sizing: border-box;
+      padding: 100px 0;
+    }
+    &:before {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, .97);
+      //background-image: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, .5));
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 700px;
+      margin-left: -350px;
+      margin-top: -120px;
+      font-size: 26px;
+      letter-spacing: .05em;
+      line-height: 1.5;
+      text-align: center;
+      color: #333;
+      @media screen and (max-width: 768px) {
+        position: static;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: 0;
+      }
+    }
+  }
+  .slide-item3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+    @media screen and (max-width: 768px) {
+      min-height: 100%;
+      height: auto;
+    }
+    .epic {
+      position: relative;
+      display: inline-block;
+      width: 50%;
+      height: 100%;
+      vertical-align: top;
+      text-align: right;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        text-align: center;
+      }
+      .content {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        margin-top: -200px;
+        color: #fff;
+        @media screen and (max-width: 768px) {
+          position: static;
+          margin-top: 0;
+          margin-bottom: 20px;
+        }
+        h1 {
+          font-size: 80px;
+          line-height: 1.4;
+          font-weight: 600;
+          margin-bottom: .5em;
+          @media screen and (max-width: 768px) {
+            font-size: 40px;
+          }
+        }
+        p {
+          font-size: 20px;
+          line-height: 1.4;
+          margin-bottom: .5em;
+          width: 500px;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            font-size: 16px;
+            box-sizing: border-box;
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+    figure {
+      display: inline-block;
+      width: 50%;
+      height: 100%;
+      vertical-align: top;
+      text-align: right;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+      }
+      img {
+        height: 100%;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+
+        }
+      }
+    }
+  }
+  .slide-item4 {
+    position: relative;
+    width: 100%;
+    min-height: 1000px;
+    @media screen and (max-width: 768px) {
+      height: 600px;
+      min-height: 600px;
+    }
+    figure {
+      width: 100%;
+      height: 1000px;
+      background: url("../img/professional/item4.jpg") no-repeat center bottom;
+      background-size: cover;
+      @media screen and (max-width: 768px) {
+        height: 600px;
+        background-size: 100%;
+      }
+      img {
+        display: none;
+        width: 100%;
+      }
+    }
+    .epic {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      @media screen and (max-width: 768px) {
+        position: absolute;
+        top: 100px;
+      }
+      .content {
+        height: auto;
+        color: #000;
+        h1 {
+          font-size: 80px;
+          font-weight: 600;
+          line-height: 1.5;
+          margin-bottom: .5em;
+          @media screen and (max-width: 768px) {
+            font-size: 40px;
+          }
+        }
+        p {
+          font-size: 20px;
+          line-height: 1.5;
+          margin-bottom: .5em;
+          padding: 20px;
+          @media screen and (max-width: 768px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .slide-item5 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    .epic {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      margin-top: -175px;
+      text-align: center;
+      color: #fff;
+      @media screen and (max-width: 768px) {
+        margin: 0;
+        transform: translateY(-50%);
+      }
+      .content {
+        width: 600px;
+        height: 350px;
+        margin: 0 auto;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          height: auto;
+        }
+        h1 {
+          font-size: 80px;
+          line-height: 1.3;
+          margin-bottom: .2em;
+          font-weight: 900;
+          @media screen and (max-width: 768px) {
+            font-size: 40px;
+          }
+        }
+        p {
+          font-size: 20px;
+          line-height: 1.3;
+          margin-bottom: .2em;
+          @media screen and (max-width: 768px) {
+            font-size: 16px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+  .slide-item6 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+    @media screen and (max-width: 768px) {
+      height: auto;
+      min-height: auto;
+    }
+    .epic {
+      position: relative;
+      display: inline-block;
+      width: 40%;
+      height: 100%;
+      vertical-align: top;
+      text-align: left;
+      @media screen and (max-width: 768px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        text-align: center;
+      }
+      .content {
+        position: absolute;
+        bottom: 100px;
+        right: 20px;
+        color: #fff;
+        @media screen and (max-width: 768px) {
+          position: static;
+          padding-top: 50px;
+        }
+        h1 {
+          font-size: 80px;
+          font-weight: 900;
+          line-height: 1.4;
+          margin-bottom: .5em;
+          @media screen and (max-width: 768px) {
+            font-size: 40px;
+          }
+        }
+        p {
+          font-size: 20px;
+          line-height: 1.4;
+          margin-bottom: .5em;
+          width: 100%;
+          @media screen and (max-width: 768px) {
+            font-size: 16px;
+            padding: 0 10px;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+    figure {
+      display: inline-block;
+      width: 60%;
+      height: 100%;
+      vertical-align: top;
+      text-align: right;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        margin-top: 200px;
+      }
+      img {
+        height: 100%;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .slide-item-7 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    @media screen and (max-width: 768px) {
+      height: auto;
+      padding: 100px 0;
+    }
+    .epic {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      margin-top: -150px;
+      text-align: center;
+      @media screen and (max-width: 768px) {
+        position: static;
+        margin-top: 0;
+      }
+      .content {
+        color: #000;
+        width: 600px;
+        margin: 0 auto;
+        height: 300px;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          height: auto;
+        }
+        h1 {
+          font-size: 80px;
+          font-weight: 900;
+          line-height: 1.4;
+          margin-bottom: .5em;
+          @media screen and (max-width: 768px) {
+            font-size: 40px;
+          }
+        }
+        p {
+          font-size: 20px;
+          line-height: 1.4;
+          margin-bottom: .5em;
+          width: 100%;
+          @media screen and (max-width: 768px) {
+            font-size: 16px;
+            box-sizing: border-box;
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+
+  }
+}

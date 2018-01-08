@@ -1,0 +1,160 @@
+@import "base";
+@import "common";
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 640px;
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .bg {
+      position: absolute;
+      top: 90px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      background: url("../img/jobs/cover.jpg") no-repeat center top;
+      background-size: cover;
+      @media screen and (max-width: 768px) {
+        top: 70px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+  .call {
+    width: 100%;
+    padding: 50px 0;
+    @media screen and (max-width: 768px) {
+      padding: 20px 0;
+    }
+    h1 {
+      font-size: 100px;
+      text-align: center;
+      font-weight: 900;
+      @media screen and (max-width: 768px) {
+        font-size: 60px;
+      }
+    }
+  }
+  .careers {
+    width: 800px;
+    margin: 100px auto 0;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .career-item {
+      cursor: pointer;
+      position: relative;
+      min-height: 80px;
+      box-sizing: border-box;
+      font-size: 0;
+      @media screen and (max-width: 768px) {
+        min-height: 40px;
+      }
+      &:before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: #fafafa;
+        //transform: scaleY(.5);
+      }
+      .career-column {
+        height: 100%;
+        display: inline-block;
+        font-size: 16px;
+        text-align: center;
+        line-height: 80px;
+        color: #666;
+      }
+      .name {
+        width: 40%;
+        text-align: left;
+        color: #54cbfc;
+        @media screen and (max-width: 768px) {
+          width: 70%;
+          text-indent: 1em;
+        }
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+      .education {
+        width: 15%;
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+      .category {
+        width: 15%;
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+      .type {
+        width: 15%;
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+      .address {
+        width: 15%;
+        @media screen and (max-width: 768px) {
+          width: 30%;
+        }
+      }
+      &.active {
+        .requirement {
+          display: block;
+        }
+      }
+      .requirement {
+        display: none;
+        overflow: hidden;
+        color: #333;
+        font-size: 16px;
+        @media screen and (max-width: 768px) {
+          box-sizing: border-box;
+          padding-left: 20px;
+        }
+        .require1, .require2, .require3 {
+          margin-bottom: 30px;
+          h2 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 20px;
+          }
+          ul {
+            padding-left: 20px;
+            li {
+              position: relative;
+              font-size: 14px;
+              line-height: 20px;
+              &:before {
+                content: ' ';
+                position: absolute;
+                top: 50%;
+                margin-top: -2px;
+                width: 4px;
+                height: 4px;
+                background: #333;
+                left: -10px;
+                border-radius: 2px;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

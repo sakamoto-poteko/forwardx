@@ -1,0 +1,251 @@
+@import "base";
+@import "common";
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 1200px;
+  min-height: 720px;
+  @media screen and (max-width: 768px) {
+    min-width: 100%;
+  }
+  .portrait {
+    .move-img {
+      transition: transform .8s cubic-bezier(0, .54, 0, 1.18);
+    }
+  }
+  .epic {
+    transition: transform .8s cubic-bezier(0, .54, 0, 1.18);
+  }
+
+  @at-root .homepage-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #fff;
+
+    .hs-boxed {
+      position: absolute;
+      top: 90px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      font-size: 0;
+      .enter-button {
+        position: absolute;
+        z-index: 1;
+        bottom: 30px;
+        right: 60px;
+        width: 60px;
+        height: 60px;
+        background: #D5E0EC;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all .2s ease;
+        @media screen and (max-width: 768px) {
+          bottom: 20px;
+          right: 20px;
+        }
+        &:hover {
+          transform: scale(1.1);
+          background: #cbd5e1;
+        }
+        .enter-img {
+          width: 24px;
+          height: 24px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      &.hero-boxed {
+        background: #f5f5f5;
+      }
+      &.exhibit-jd-boxed {
+        background: #000;
+      }
+      &.news-boxed {
+        .news-container {
+          width: 100%;
+          height: 100%;
+          font-size: 0;
+          .news-epic {
+            position: relative;
+            display: inline-block;
+            width: 50%;
+            height: 100%;
+            font-size: 80px;
+            color: #000;
+            vertical-align: top;
+            @media screen and (max-width: 768px) {
+              font-size: 60px;
+              width: 100%;
+              height: auto;
+            }
+            .title {
+              position: absolute;
+              top: 50%;
+              right: 50px;
+              text-align: right;
+              line-height: 1.2;
+              transform: translateY(-50%);
+              @media screen and (max-width: 768px) {
+                position: static;
+                text-align: center;
+                line-height: 1.2;
+                transform: none;
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+          .img-asset {
+            position: relative;
+            display: inline-block;
+            width: 50%;
+            height: 100%;
+            vertical-align: top;
+            @media screen and (max-width: 768px) {
+              margin-top: 50px;
+              width: 100%;
+              height: auto;
+            }
+            img {
+              position: absolute;
+              top: 50%;
+              margin-top: -150px;
+              height: 300px;
+              @media screen and (max-width: 768px) {
+                position: static;
+                width: 100%;
+                margin-top: 10px;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 768px) {
+        top: 70px;
+      }
+      .epic {
+        position: relative;
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+        box-sizing: border-box;
+        z-index: 1;
+        overflow: hidden;
+        &.hero-epic {
+          color: #000;
+        }
+        &.jd-epic {
+          color: #fff;
+        }
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          height: auto;
+        }
+        .epic-content {
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          box-sizing: border-box;
+          text-align: center;
+          &.hero-epic-content {
+            height: 230px;
+            margin-top: -115px;
+          }
+          &.jd-epic-content {
+            height: 330px;
+            margin-top: -65px;
+            text-align: left;
+            padding-left: 20px;
+            @media screen and (max-width: 768px) {
+              text-align: center;
+            }
+          }
+          @media screen and (max-width: 768px) {
+            position: relative;
+            height: auto !important;
+            margin-top: 10px !important;
+          }
+          h2 {
+            font-weight: 500;
+            font-size: 36px;
+            margin: 0 0 .5em;
+            @media screen and (max-width: 768px) {
+              font-size: 20px;
+            }
+          }
+          h1 {
+            font-weight: 500;
+            font-size: 100px;
+            line-height: 1;
+            margin: 0 0 .5em;
+            @media screen and (max-width: 768px) {
+              font-size: 60px;
+            }
+          }
+          p {
+            box-sizing: border-box;
+            line-height: 1.5;
+            font-size: 16px;
+            @media screen and (max-width: 768px) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .portrait {
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        @media screen and (max-width: 768px) {
+          position: absolute;
+          bottom: 0;
+          top: 200px;
+          left: 0;
+          width: 100%;
+          height: 430px;
+          text-align: center;
+          background: transparent no-repeat center top;
+          background-size: cover;
+          &.hero-portrait {
+            background-image: url("../../src/img/index/trunk.png");
+          }
+          &.jd-portrait {
+            background-image: url("../../src/img/index/jd.jpg");
+          }
+        }
+        .move-img {
+          position: absolute;
+          height: 100%;
+          &.hero-move-img {
+            bottom: -35px;
+            right: -150px;
+          }
+          &.jd-move-img {
+            height: 90%;
+            top: -50px;
+          }
+          @media screen and (max-width: 768px) {
+            display: none;
+            bottom: 0;
+            right: -50px;
+            transform: translateX(50%);
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
