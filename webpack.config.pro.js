@@ -129,7 +129,7 @@ module.exports = {
             filename: 'newsroom.html',
             chunks: ['newsroom'],
             minify: {
-                collapseWhitespace: true,
+                collapseWhitespace: false,
                 removeComments: true,
                 minifyCSS: true,
                 minifyJS: true
@@ -195,7 +195,7 @@ module.exports = {
             filename: 'newsdetail.html',
             chunks: ['newsdetail'],
             minify: {
-                collapseWhitespace: true,
+                collapseWhitespace: false,
                 removeComments: true,
                 minifyCSS: true,
                 minifyJS: true
