@@ -202,7 +202,7 @@ footer {
             height: 0;
             color: #888;
             &.contact {
-              height: 34px;
+              min-height: 34px;
             }
             &.share {
               a {
@@ -223,6 +223,18 @@ footer {
             line-height: 1.27273;
             letter-spacing: .005em;
             color: #ccc;
+          }
+          &.language {
+            height: 34px;
+            a {
+              display: inline-block;
+              width: auto;
+              color: #333;
+              &:hover {
+                text-decoration: underline;
+                color: #ff4c4f;
+              }
+            }
           }
           a {
             cursor: pointer;
