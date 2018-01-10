@@ -1,4 +1,5 @@
 import 'scss/english.scss';
+import 'libs/statistics';
 
 require("expose-loader?$!jquery");
 

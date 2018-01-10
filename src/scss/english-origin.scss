@@ -87,15 +87,7 @@ body {
   @at-root .hero {
     width: 100%;
     height: 100%;
-    /*
-    https://static.pexels.com/photos/175710/pexels-photo-175710.jpeg
-    https://static.pexels.com/photos/383568/pexels-photo-383568.jpeg
-    https://static.pexels.com/photos/48770/business-time-clock-clocks-48770.jpeg
-    https://static.pexels.com/photos/434645/pexels-photo-434645.jpeg
-    https://static.pexels.com/photos/734715/pexels-photo-734715.jpeg
-    ../img/en/bg4.jpg
-    */
-    background: url("../img/en/bg5.jpg") no-repeat center bottom;
+    background: url("../img/en/hero.jpg") no-repeat center bottom;
     background-size: cover;
   }
   @at-root .join {

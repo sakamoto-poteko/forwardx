@@ -38,7 +38,9 @@ module.exports = {
             '@': resolve('src'),
             'scss': resolve('src/scss'),
             'js': resolve('src/js'),
-            'lib': resolve('lib')
+            'libs': resolve('src/libs'),
+            'data': resolve('src/data'),
+            'img': resolve('src/img')
         }
     },
     module: {
@@ -110,7 +112,8 @@ module.exports = {
                 removeComments: true,
                 minifyCSS: true,
                 minifyJS: true
-            }
+            },
+            inject: 'head'
         }),
         new HtmlWebpackPlugin({
             template: 'template/consume.html',

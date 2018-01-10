@@ -42,35 +42,74 @@ body {
       width: 100%;
       margin-top: 60px;
     }
-    .title {
-      font-size: 48px;
-      font-weight: 600;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 40px;
-      margin-bottom: 50px;
-      @media screen and (max-width: 768px) {
-        width: 100%;
-        font-size: 30px;
-        box-sizing: border-box;
-        padding: 0 20px;
-        line-height: 1.2;
-        margin-bottom: 20px;
+    .news-content {
+      .title {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+        p {
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 1.2;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            font-size: 30px;
+            box-sizing: border-box;
+            padding: 0 20px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+          }
+        }
+        time {
+          display: inline-block;
+          font-size: 20px;
+          margin-top: 18px;
+          font-weight: 200;
+          color: #666;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            font-size: 16px;
+            box-sizing: border-box;
+            padding: 0 20px;
+            line-height: 1.2;
+            margin-top: 0;
+          }
+        }
+        a {
+          color: #2b6fa9;
+          font-size: 14px;
+        }
+        @media screen and (max-width: 768px) {
+          margin-bottom: 20px;
+        }
       }
-    }
-    img {
-      width: 100%;
-      height: auto;
-      margin: 20px 0;
-    }
-    p {
-      margin-top: 20px;
-      font-size: 16px;
-      color: #333;
-      line-height: 2;
-      @media screen and (max-width: 768px) {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 0 20px;
+      .news-article {
+        @media screen and (max-width: 768px) {
+          box-sizing: border-box;
+          padding: 0 20px;
+        }
+        img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+          max-height: 400px;
+          margin: 20px auto;
+        }
+        .figure-caption {
+          width: 100%;
+          text-align: center;
+          font-size: 13px;
+        }
+        p {
+          margin-top: 20px;
+          font-size: 16px;
+          color: #333;
+          line-height: 2;
+          text-align: justify;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+          }
+        }
       }
     }
     .back {

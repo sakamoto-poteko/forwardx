@@ -196,6 +196,15 @@ footer {
               }
             }
           }
+          &.share {
+            a {
+              opacity: 1;
+              transition: .3s opacity ease;
+              &:hover {
+                opacity: .7;
+              }
+            }
+          }
           transition: height .5s ease;
           @media screen and (max-width: 768px) {
             padding-left: 20px;
@@ -238,14 +247,37 @@ footer {
               display: inline-block;
               width: auto;
               color: #333;
+              line-height: 34px;
               &:hover {
                 text-decoration: underline;
-                color: #ff4c4f;
+                color: #256DA7;
+              }
+              .country-icon {
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                background: #fff no-repeat center;
+                background-size: cover;
+                vertical-align: top;
+                margin-top: 9px;
+                border-radius: 8px;
+                margin-right: 5px;
+                &.china {
+                  background-image: url("../assets/china.png");
+                }
+                &.usa {
+                  background-image: url("../assets/usa.png");
+                }
               }
             }
           }
           a {
             cursor: pointer;
+            color: #333;
+            transition: .3s color ease;
+            &:hover {
+              color: #777;
+            }
           }
         }
       }

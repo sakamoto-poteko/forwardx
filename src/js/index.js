@@ -1,4 +1,5 @@
 import 'scss/index.scss';
+import 'libs/statistics';
 
 const nav = require('../../template/nav.html');
 const footer = require('../../template/footer.html');
